@@ -110,7 +110,7 @@ with tab_cleansingnexport:
     missing_value_cleansing = st.checkbox("Fill in missing values?")
 
     # Fill in missing values based on user input
-    if missing_value_cleansing and uploaded_file is not None:
+    if missing_value_cleansing:
         df_clean = df
         for col in df_clean.columns:
             if df_clean[col].dtype == 'float':
