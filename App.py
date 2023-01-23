@@ -68,7 +68,7 @@ def load_data(link):
     return df
 
 def load_sample():
-    df = load_data("https://raw.githubusercontent.com/hoyinli1211/DataQualityReport/main/loan_sanction_test.csv")
+    df = load_data("https://raw.githubusercontent.com/Alpha-Analytics-Studio/DataProfilingReport/main/sample.csv")
     st.session_state.df = df
 
 def showdata(df):
